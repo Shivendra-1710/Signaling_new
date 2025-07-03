@@ -9,7 +9,7 @@ app.use(cors());
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://localhost:3000"], // Allow Vite dev server and other origins
+    origin: ["http://localhost:5173","https://remotely1.netlify.app" ,"http://localhost:3000"], // Allow Vite dev server and other origins
     methods: ["GET", "POST"],
     credentials: true
   }
